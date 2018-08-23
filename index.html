@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- responsive meta tag needed? -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Crystal Collector</title>
 
     <!-- insert Reset CSS here -->
@@ -13,13 +16,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 
     
-        <!--identify additional jquery, javascript and css links needed  -->
+        <!--identify additional jquery, javascript and css links needed?  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 </head>
 
 <body>
 
         <div class="jumbotron text-center">
-            <h1>Crystal Collector!</h1>
+            <h1>Crystal Collector</h1>
         </div>
 
         <div class="container-fluid">
@@ -28,7 +32,7 @@
                     <h2>Instructions:</h2>
                     <p>You will be given a random number at the start of the game.</p>
                     <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                    <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                    <p>You win the game by matching your total score to the random number. You lose the game if your total score is greater than the random number.</p>
                     <p>The value of each crystal is hidden from you until you click on it.</p>
                     <p>Each time you start a new game, new values will be set for the 4 crystals and the random score to match.</p>
 
@@ -37,14 +41,14 @@
             <div class="row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4">
-                    <h2>Score to match: <span id="scoreToMatch"></span></h2>
+                    <h2><b>Score to match:</b><span id="scoreToMatch"></span></h2>
                 </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <h2>Your total score is: <span id="totalScore"></span></h2>
+                    <h2><b>Your total score is:</b><span id="totalScore"></span></h2>
                 </div>
             <div class="row">
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <h2>Wins: <span id="wins"></span></h2>
                     <h2 class="text-left">Losses: <span id="losses"></span></h2>
                 </div>
